@@ -3,3 +3,97 @@
     padding: 0;
     margin: 0;
 }
+
+
+body *{
+    /* border: 1px solid black; */
+}
+
+h2{
+    font-size: 30px !important;
+    font-weight: 400 !important;
+}
+
+/*SIDE NAVBAR*/
+
+nav{
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    border-right: 2px solid #99A2A2 ;
+    margin-bottom: 150px;
+}
+
+nav h2{
+    padding: 15px 10px 15px 32px;
+}
+
+/*CHAPTERS MENU SELECTION*/
+
+nav ul{
+    height: 90%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 0 !important;
+}
+
+nav li{
+    list-style: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+nav ul li:first-child{
+    border-top: 1px solid black;
+}
+
+nav a{
+    padding: 10px 30px;
+    display: block;
+}
+
+nav a:link,nav a:visited,nav a:hover, p, .scratchpad span{
+    text-decoration: none;
+    color: #4D4E53;
+}
+
+/*MAIN CONTENT*/
+
+main{
+    position: absolute;
+    right: 0;
+    width: calc(100vw - 300px);
+}
+
+.scratchpad{
+    background-color: #F7F7F7;
+    border-radius: 7px;
+    font-family: 'Courier Prime', monospace;
+    font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 814px) {
+    nav{
+        width: 100%;
+        position: relative;
+        top: 0;
+        height: 30vh;
+        border-right: none;
+    }
+
+    nav h2{
+        text-align: center;
+    }
+
+    #chapters{
+        border: 1px solid black;
+        height: 220px;
+    }
+
+    main{
+        width: 100%;
+    }
+}
