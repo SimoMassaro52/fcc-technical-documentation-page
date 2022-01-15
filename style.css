@@ -69,8 +69,8 @@ main{
 .scratchpad{
     background-color: #F7F7F7;
     border-radius: 7px;
-    font-family: 'Courier Prime', monospace;
     font-size: 12px;
+    display: block;
 }
 
 
